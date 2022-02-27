@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		78678ADC27CC0929002A2C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADB27CC0929002A2C5A /* AppDelegate.swift */; };
 		78678ADE27CC0929002A2C5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADD27CC0929002A2C5A /* SceneDelegate.swift */; };
-		78678AE027CC0929002A2C5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADF27CC0929002A2C5A /* ViewController.swift */; };
+		78678AE027CC0929002A2C5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADF27CC0929002A2C5A /* MainViewController.swift */; };
 		78678AE327CC0929002A2C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78678AE127CC0929002A2C5A /* Main.storyboard */; };
 		78678AE527CC092B002A2C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78678AE427CC092B002A2C5A /* Assets.xcassets */; };
 		78678AE827CC092B002A2C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78678AE627CC092B002A2C5A /* LaunchScreen.storyboard */; };
+		78678AF227CC0A0F002A2C5A /* MainViewControllerVimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678AF127CC0A0F002A2C5A /* MainViewControllerVimeModel.swift */; };
+		78678AF627CC1260002A2C5A /* UDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678AF527CC1260002A2C5A /* UDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		78678AD827CC0929002A2C5A /* Boxing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78678ADB27CC0929002A2C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78678ADD27CC0929002A2C5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78678ADF27CC0929002A2C5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78678ADF27CC0929002A2C5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78678AE227CC0929002A2C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78678AE427CC092B002A2C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78678AE727CC092B002A2C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78678AE927CC092B002A2C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78678AF127CC0A0F002A2C5A /* MainViewControllerVimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerVimeModel.swift; sourceTree = "<group>"; };
+		78678AF527CC1260002A2C5A /* UDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		78678ADA27CC0929002A2C5A /* Boxing */ = {
 			isa = PBXGroup;
 			children = (
-				78678ADB27CC0929002A2C5A /* AppDelegate.swift */,
-				78678ADD27CC0929002A2C5A /* SceneDelegate.swift */,
-				78678ADF27CC0929002A2C5A /* ViewController.swift */,
-				78678AE127CC0929002A2C5A /* Main.storyboard */,
+				78678AF427CC124C002A2C5A /* Servises */,
+				78678AF327CC0A15002A2C5A /* ModelVIewController */,
+				78678AEF27CC09BE002A2C5A /* Storyboards */,
+				78678AF027CC09EB002A2C5A /* App */,
 				78678AE427CC092B002A2C5A /* Assets.xcassets */,
-				78678AE627CC092B002A2C5A /* LaunchScreen.storyboard */,
-				78678AE927CC092B002A2C5A /* Info.plist */,
 			);
 			path = Boxing;
+			sourceTree = "<group>";
+		};
+		78678AEF27CC09BE002A2C5A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				78678AE127CC0929002A2C5A /* Main.storyboard */,
+				78678AE627CC092B002A2C5A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		78678AF027CC09EB002A2C5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78678ADB27CC0929002A2C5A /* AppDelegate.swift */,
+				78678ADD27CC0929002A2C5A /* SceneDelegate.swift */,
+				78678AE927CC092B002A2C5A /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		78678AF327CC0A15002A2C5A /* ModelVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				78678ADF27CC0929002A2C5A /* MainViewController.swift */,
+				78678AF127CC0A0F002A2C5A /* MainViewControllerVimeModel.swift */,
+			);
+			path = ModelVIewController;
+			sourceTree = "<group>";
+		};
+		78678AF427CC124C002A2C5A /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				78678AF527CC1260002A2C5A /* UDManager.swift */,
+			);
+			path = Servises;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78678AE027CC0929002A2C5A /* ViewController.swift in Sources */,
+				78678AE027CC0929002A2C5A /* MainViewController.swift in Sources */,
 				78678ADC27CC0929002A2C5A /* AppDelegate.swift in Sources */,
+				78678AF227CC0A0F002A2C5A /* MainViewControllerVimeModel.swift in Sources */,
+				78678AF627CC1260002A2C5A /* UDManager.swift in Sources */,
 				78678ADE27CC0929002A2C5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K5L7239SK4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Boxing/Info.plist;
+				INFOPLIST_FILE = Boxing/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K5L7239SK4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Boxing/Info.plist;
+				INFOPLIST_FILE = Boxing/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
