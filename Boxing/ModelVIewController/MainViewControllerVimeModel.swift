@@ -32,6 +32,8 @@ class MainViewControllerViewModel: MainViewControllerViewModelProtocol {
             dump(model)
             
             // save in DB or other actions...
+            
+            viewModelDidChange?(self)
         }
     }
     
