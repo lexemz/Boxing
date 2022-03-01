@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7842083427CE32B000271064 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7842083327CE32B000271064 /* Box.swift */; };
 		78678ADC27CC0929002A2C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADB27CC0929002A2C5A /* AppDelegate.swift */; };
 		78678ADE27CC0929002A2C5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADD27CC0929002A2C5A /* SceneDelegate.swift */; };
 		78678AE027CC0929002A2C5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78678ADF27CC0929002A2C5A /* MainViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7842083327CE32B000271064 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		78678AD827CC0929002A2C5A /* Boxing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78678ADB27CC0929002A2C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78678ADD27CC0929002A2C5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7842083227CE32A200271064 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7842083327CE32B000271064 /* Box.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		78678ACF27CC0929002A2C5A = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 			children = (
 				78678AF427CC124C002A2C5A /* Servises */,
 				78678AF327CC0A15002A2C5A /* ModelVIewController */,
+				7842083227CE32A200271064 /* Helpers */,
 				78678AEF27CC09BE002A2C5A /* Storyboards */,
 				78678AF027CC09EB002A2C5A /* App */,
 				78678AE427CC092B002A2C5A /* Assets.xcassets */,
@@ -179,6 +190,7 @@
 				78678AE027CC0929002A2C5A /* MainViewController.swift in Sources */,
 				78678ADC27CC0929002A2C5A /* AppDelegate.swift in Sources */,
 				78678AF227CC0A0F002A2C5A /* MainViewControllerVimeModel.swift in Sources */,
+				7842083427CE32B000271064 /* Box.swift in Sources */,
 				78678AF627CC1260002A2C5A /* UDManager.swift in Sources */,
 				78678ADE27CC0929002A2C5A /* SceneDelegate.swift in Sources */,
 			);

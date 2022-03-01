@@ -19,10 +19,17 @@ class MainViewController: UIViewController {
     
     private var viewModel: MainViewControllerViewModelProtocol! {
         didSet {
-            viewModel.viewModelDidChange = { [weak self] viewModel in
-                self?.setupTF(viewModel.textFieldText)
-                self?.setupButton(viewModel.buttonIsToggled)
+            viewModel.textFieldText.bind { [weak self] value in
+                self?.setupTF(value)
+                
+                print("textFieldtext in ViewModel didChange")
             }
+            
+            viewModel.buttonIsToggled.bind { [weak self] value in
+                self?.setupButton(value)
+            }
+            
+            title = viewModel.modelName
         }
     }
     
@@ -40,10 +47,8 @@ class MainViewController: UIViewController {
     }
     
     private func setupUI() {
-        setupTF(viewModel.textFieldText)
-        setupButton(viewModel.buttonIsToggled)
-        
-        title = viewModel.modelName
+        setupTF(viewModel.textFieldText.value)
+        setupButton(viewModel.buttonIsToggled.value)
     }
     
     private func setupTF(_ data: String?) {
